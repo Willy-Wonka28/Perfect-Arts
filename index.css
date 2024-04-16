@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+@keyframes perfect {
+    0%{
+        stroke-dashoffset: 10;
+        fill: transparent;
+        stroke: black;
+    }
+    40%{
+        stroke-dashoffset: 50;
+        fill: transparent;
+        stroke: black;
+    }
+    80%{
+        fill: transparent;
+        stroke: black;
+        stroke-dashoffset: 100;
+    }
+    100%{
+        fill: black;
+        stroke-dashoffset: 100;
+    }
+}
+
+body{
+    font-family:serif;
+    cursor: pointer;
+}
+header{
+    font-family:  serif;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid 1px black;
+}
+.logo{
+    max-width:100px;
+    max-height:100px;
+}
+.logo_headertext{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav{
+    width:400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav div{
+    width:85px;
+    height:25px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid 1px black;
+    border-right: solid 1px black;
+}
+nav div:hover{
+    box-shadow: 5px 5px black;
+    border: solid 1px grey;
+}
+nav #active{
+    box-shadow: 5px 5px black;
+    border: solid 1px grey;
+}
+#perfect text{
+    font-weight: bold;
+    font-size: 45px;
+    stroke-dasharray: 125;
+    animation: perfect 1.5s linear forwards;
+}
+main{
+    margin-block: 10px;
+    display: flex;
+    align-items: center;
+    height:600px;
+    width:100%;
+}
+#carousel{
+    display: flex;
+    align-items: center;
+    height:600px;
+    width:100%;
+    justify-content: flex-start;
+    overflow-y: auto;
+    scroll-behavior: smooth !important;
+}
+#carousel::-webkit-scrollbar{
+    width:100%
+}
+#carousel::-webkit-scrollbar-track{
+    background-color:grey;
+    margin-top: 25px;
+    margin-inline:25px;
+    border-radius: 2px;
+}
+#carousel::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 1px;
+}
+#display{
+    margin:5px;
+    width: 362.5px;
+    height:580px;
+}
+footer{
+    padding-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    border-block: solid 1px black;
+}
+.icon-pack{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.icons{
+    margin: 5px;
+    width:35px;
+    height:35px;
+}
+.signature{
+    border-top: solid 1px black;
+}
+.bbb{
+    width:100px;
+    height:100px;
+}
