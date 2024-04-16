@@ -92,6 +92,7 @@ main{
     justify-content: flex-start;
     overflow-y: auto;
     scroll-behavior: smooth !important;
+    
 }
 #carousel::-webkit-scrollbar{
     width:100%
