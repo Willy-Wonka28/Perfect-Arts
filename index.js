@@ -2,9 +2,8 @@
 //getting the modal working
 
 let popUpText = [
-    "SCARLET WITCH", "Charcoal x graphite on pelican paper", "16x20, Unframed"
-
-
+    "Charcoal x graphite on pelican paper", "16x20", "Unframed",
+    "Framed", "A4 Sized", "Digital Art", ""
 ];
 
 const modal = document.querySelector("#modal");
@@ -44,9 +43,9 @@ zenitsu.addEventListener("click", () => {
     const popUpImage = document.querySelector(".dynamic-image");
     const imageUrl = event.target.src;
     popUpImage.src = imageUrl;
-    art.innerHTML = popUpText[0];
-    materials.innerHTML = popUpText[1];
-    specs.innerHTML = popUpText[2];
+    art.innerHTML = popUpText[5];
+    materials.innerHTML = popUpText[6];
+    specs.innerHTML = popUpText[6];
 
     modal.style.visibility = "visible";
     modal.style.height = "650px";
@@ -59,9 +58,7 @@ satoru.addEventListener("click", () => {
     const popUpImage = document.querySelector(".dynamic-image");
     const imageUrl = event.target.src;
     popUpImage.src = imageUrl;
-    art.innerHTML = popUpText[0];
-    materials.innerHTML = popUpText[1];
-    specs.innerHTML = popUpText[2];
+    art.innerHTML = popUpText[5];
 
     modal.style.visibility = "visible";
     modal.style.height = "650px";
@@ -75,7 +72,7 @@ eye.addEventListener("click", () => {
     const imageUrl = event.target.src;
     popUpImage.src = imageUrl;
     art.innerHTML = popUpText[0];
-    materials.innerHTML = popUpText[1];
+    materials.innerHTML = popUpText[4];
     specs.innerHTML = popUpText[2];
 
     modal.style.visibility = "visible";
@@ -91,7 +88,7 @@ mal.addEventListener("click", () => {
     popUpImage.src = imageUrl;
     art.innerHTML = popUpText[0];
     materials.innerHTML = popUpText[1];
-    specs.innerHTML = popUpText[2];
+    specs.innerHTML = popUpText[3];
 
     modal.style.visibility = "visible";
     modal.style.height = "650px";
@@ -104,9 +101,9 @@ lion.addEventListener("click", () => {
     const popUpImage = document.querySelector(".dynamic-image");
     const imageUrl = event.target.src;
     popUpImage.src = imageUrl;
-    art.innerHTML = popUpText[0];
-    materials.innerHTML = popUpText[1];
-    specs.innerHTML = popUpText[2];
+    art.innerHTML = popUpText[5];
+    materials.innerHTML = popUpText[6];
+    specs.innerHTML = popUpText[6];
 
     modal.style.visibility = "visible";
     modal.style.height = "650px";
@@ -119,9 +116,9 @@ hand.addEventListener("click", () => {
     const popUpImage = document.querySelector(".dynamic-image");
     const imageUrl = event.target.src;
     popUpImage.src = imageUrl;
-    art.innerHTML = popUpText[0];
-    materials.innerHTML = popUpText[1];
-    specs.innerHTML = popUpText[2];
+    art.innerHTML = popUpText[5];
+    materials.innerHTML = popUpText[6];
+    specs.innerHTML = popUpText[6];
 
     modal.style.visibility = "visible";
     modal.style.height = "650px";
@@ -135,7 +132,7 @@ spider.addEventListener("click", () => {
     const imageUrl = event.target.src;
     popUpImage.src = imageUrl;
     art.innerHTML = popUpText[0];
-    materials.innerHTML = popUpText[1];
+    materials.innerHTML = popUpText[4];
     specs.innerHTML = popUpText[2];
 
     modal.style.visibility = "visible";
@@ -150,7 +147,7 @@ oil.addEventListener("click", () => {
     const imageUrl = event.target.src;
     popUpImage.src = imageUrl;
     art.innerHTML = popUpText[0];
-    materials.innerHTML = popUpText[1];
+    materials.innerHTML = popUpText[4];
     specs.innerHTML = popUpText[2];
 
     modal.style.visibility = "visible";
@@ -164,9 +161,10 @@ sukuna.addEventListener("click", () => {
     const popUpImage = document.querySelector(".dynamic-image");
     const imageUrl = event.target.src;
     popUpImage.src = imageUrl;
-    art.innerHTML = popUpText[0];
-    materials.innerHTML = popUpText[1];
-    specs.innerHTML = popUpText[2];
+    art.innerHTML = popUpText[5];
+    materials.innerHTML = popUpText[6];
+    specs.innerHTML = popUpText[6];
+
 
     modal.style.visibility = "visible";
     modal.style.height = "650px";
@@ -195,7 +193,7 @@ side1.addEventListener("click", () => {
     const imageUrl = event.target.src;
     popUpImage.src = imageUrl;
     art.innerHTML = popUpText[0];
-    materials.innerHTML = popUpText[1];
+    materials.innerHTML = popUpText[4];
     specs.innerHTML = popUpText[2];
 
     modal.style.visibility = "visible";
@@ -210,7 +208,7 @@ side2.addEventListener("click", () => {
     const imageUrl = event.target.src;
     popUpImage.src = imageUrl;
     art.innerHTML = popUpText[0];
-    materials.innerHTML = popUpText[1];
+    materials.innerHTML = popUpText[4];
     specs.innerHTML = popUpText[2];
 
     modal.style.visibility = "visible";
