@@ -1,29 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif+Caption:ital@0;1&family=Satisfy&display=swap');
+
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
-}
-
-@keyframes perfect {
-    0%{
-        stroke-dashoffset: 10;
-        fill: transparent;
-        stroke: black;
-    }
-    40%{
-        stroke-dashoffset: 50;
-        fill: transparent;
-        stroke: black;
-    }
-    80%{
-        fill: transparent;
-        stroke: black;
-        stroke-dashoffset: 100;
-    }
-    100%{
-        fill: black;
-        stroke-dashoffset: 100;
-    }
 }
 
 body{
@@ -74,14 +54,11 @@ nav #active{
 #perfect text{
     font-weight: bold;
     font-size: 45px;
-    stroke-dasharray: 125;
-    animation: perfect 1.5s linear forwards;
 }
 main{
     margin-block: 10px;
     display: flex;
     align-items: center;
-    height:600px;
     width:100%;
 }
 #carousel{
@@ -112,6 +89,46 @@ main{
     width: 362.5px;
     height:580px;
 }
+/* Modal */
+#modal{
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+    width:0;
+    font-family: "Montserrat", sans-serif;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left:auto;
+    margin-right:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.close{
+    width:25px;
+    height:25px;
+    float:right;
+    margin-top: 0px;
+    margin: 5px;
+}
+.fig{
+
+}
+.caption{
+
+}
+.sup-dialog{
+    width:300px;
+    height:550px;
+    padding-inline:10px;
+    margin-inline: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+/* Modal end */
 footer{
     padding-top: 20px;
     text-align: center;
