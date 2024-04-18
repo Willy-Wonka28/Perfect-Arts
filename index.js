@@ -221,9 +221,9 @@ side2.addEventListener("click", () => {
 })
 
 document.querySelector(".close").addEventListener("click", () => {
-    modal.close();
-    modal.style.visibility = "visible";
-    modal.style.height = "650px";
-    modal.style.width = "750px";
+    modal.style.visibility = "hidden";
+    modal.style.height = "0px";
+    modal.style.width = "0px";
     modal.style.padding= "0px"
+    modal.close();
 })
