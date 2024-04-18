@@ -3,7 +3,7 @@
 
 let popUpText = [
     "SCARLET WITCH", "Charcoal x graphite on pelican paper", "16x20, Unframed"
-    
+
 
 ];
 
@@ -222,4 +222,8 @@ side2.addEventListener("click", () => {
 
 document.querySelector(".close").addEventListener("click", () => {
     modal.close();
+    modal.style.visibility = "visible";
+    modal.style.height = "650px";
+    modal.style.width = "750px";
+    modal.style.padding= "0px"
 })
