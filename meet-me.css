@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif+Caption:ital@0;1&family=Satisfy&display=swap');
 
 *{
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-
 body{
     font-family:serif;
     cursor: pointer;
@@ -60,76 +59,41 @@ nav #active{
     font-size: 45px;
 }
 main{
-    margin-block: 10px;
-    display: flex;
-    align-items: center;
-    width:100%;
-}
-#carousel{
-    display: flex;
-    align-items: center;
-    height:650px;
-    width:100%;
-    justify-content: flex-start;
-    overflow-y: auto;
-    scroll-behavior: smooth !important;
-    
-}
-#carousel::-webkit-scrollbar{
-    width:100%
-}
-#carousel::-webkit-scrollbar-track{
-    background-color:grey;
-    margin-top: 25px;
-    margin-inline:25px;
-    border-radius: 2px;
-}
-#carousel::-webkit-scrollbar-thumb{
-    background-color: black;
-    border-radius: 1px;
-}
-#display{
-    margin:5px;
-    width: 400px;
-    height:590px;
-}
-/* Modal */
-#modal{
-    visibility: hidden;
-    overflow: hidden;
-    height: 0;
-    width:0;
-    font-family: "Montserrat", sans-serif;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left:auto;
-    margin-right:auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.close{
-    width:25px;
-    height:25px;
-    float:right;
-    margin-top: 0px;
-    margin: 5px;
-}
-.sup-dialog{
-    width:300px;
-    height:550px;
-    padding-inline:10px;
-    margin-inline: 15px;
+    height:605px;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
+    flex-direction:column;
+}
+.pfp{
+    width:275px;
+    height:350px;
+    border: solid 2px black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.himself{
+    width:250px;
+    height:325px;
+}
+.text1{
+    margin-top:10px;
+    margin-bottom: 20px;
+}
+.text2{
+    width:500px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
     text-align: center;
+    margin-bottom: 5px;
 }
-.sup-dialog h2{
-    margin-bottom: 10px;
+.text3{
+    font-family: "Montserrat", sans-serif;
+    font-family: 15px;
+    margin-bottom: 5px;
 }
-/* Modal end */
 footer{
     padding-top: 20px;
     text-align: center;
@@ -158,3 +122,4 @@ footer{
     width:100px;
     height:100px;
 }
+
