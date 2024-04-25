@@ -1,11 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif+Caption:ital@0;1&family=Satisfy&display=swap');
 
+@keyframes preload {
+    0%{
+        transform: rotate(30deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
-
+#preloader{
+    top:0;
+    left:0;
+    position: fixed;
+    width:100vw;
+    height:100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+#preloader::after{
+    content:"";
+    background-color: black;
+    width:75px;
+    height:75px;
+    box-shadow: 10px 10px;
+    border:solid 1px white;
+    animation: 0.75s preload ease infinite;
+}
 body{
     font-family:serif;
     cursor: pointer;
