@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif+Caption:ital@0;1&family=Satisfy&display=swap');
 
 *{
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-
 body{
     font-family:serif;
     cursor: pointer;
@@ -60,79 +59,53 @@ nav #active{
     font-size: 45px;
 }
 main{
-    margin-block: 10px;
-    display: flex;
-    align-items: center;
+    height:400px;
     width:100%;
-}
-#carousel{
     display: flex;
-    align-items: center;
-    height:680px;
-    width:100%;
-    justify-content: flex-start;
-    overflow-y: auto;
-    scroll-behavior: smooth !important;   
-}
-#carousel div{
-    height:625px;
-    padding-inline: 5px;
-    margin-inline: 15px;
-    display:flex;
     justify-content: center;
-    align-items:center;
-    flex-direction: column;
-    text-align: center;
-    font-size: 14px;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
 }
-#carousel .div{
-    height:625px;
-    padding-inline: 5px;
+.contact{
+    width:250px;
+    height:250px;
     margin-inline: 10px;
-    display:flex;
+    display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     flex-direction: column;
-    text-align: center;
-    font-size: 14px;
-    border: 1px solid black;
+    border: 2px solid black;
+    border-top: none;
+    border-right: none;
+    box-shadow: -10px -10px black;
 }
-#carousel::-webkit-scrollbar{
-    visibility: hidden;
+.contact2{
+    width:315px;
+    height:250px;
+    padding-inline:20px;
+    margin-inline: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-#carousel::-webkit-scrollbar-track{
-    visibility: hidden;
+.contact3{
+    width:250px;
+    height:250px;
+    margin-inline: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    border-bottom: none;
+    border-left: none;
+    box-shadow: 10px 10px black;
 }
-#carousel::-webkit-scrollbar-thumb{
-    visibility: hidden;
+.contact_img{
+    width:45px;
+    height:45px;
 }
-#display{
-    margin:5px;
-    width: 400px;
-    height:580px;
-}
-#display2{
-    margin:5px;
-    width: 450px;
-    height:580px;
-}
-#display3{
-    margin:5px;
-    width: 380px;
-    height:580px;
-}
-.bargain{
-    margin-top: 10px;
-    padding-block: 5px;
-    width:400px;
-    height:35px;
-    border-radius:3px;
-    text-align: center;
-    background-color: black;
-    color:white;
-    font-size: 20px;
-}
-
 footer{
     padding-top: 20px;
     text-align: center;
@@ -161,3 +134,4 @@ footer{
     width:100px;
     height:100px;
 }
+
