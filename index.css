@@ -333,7 +333,7 @@ main{
 #carousel{
     display: flex;
     align-items: center;
-    height:680px;
+    height:650px;
     width:100%;
     justify-content: flex-start;
     overflow-y: auto;
